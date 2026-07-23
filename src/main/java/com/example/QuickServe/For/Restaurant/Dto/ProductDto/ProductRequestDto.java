@@ -1,4 +1,4 @@
-package com.example.QuickServe.For.Restaurant.Dto.Request;
+package com.example.QuickServe.For.Restaurant.Dto.ProductDto;
 
 
 import jakarta.validation.constraints.NotBlank;

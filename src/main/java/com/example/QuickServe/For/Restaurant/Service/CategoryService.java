@@ -1,12 +1,10 @@
 package com.example.QuickServe.For.Restaurant.Service;
 
-import com.example.QuickServe.For.Restaurant.Dto.Request.CategoryRequestDto;
-import com.example.QuickServe.For.Restaurant.Dto.Response.CategoryResponseDto;
+import com.example.QuickServe.For.Restaurant.Dto.CategoryDto.CategoryRequestDto;
+import com.example.QuickServe.For.Restaurant.Dto.CategoryDto.CategoryResponseDto;
 import com.example.QuickServe.For.Restaurant.Entity.Category;
 import com.example.QuickServe.For.Restaurant.Repo.CategoryRepo;
 import lombok.RequiredArgsConstructor;
-import org.antlr.v4.runtime.InterpreterRuleContext;
-import org.jspecify.annotations.Nullable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;

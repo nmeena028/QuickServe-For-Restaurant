@@ -1,4 +1,4 @@
-package com.example.QuickServe.For.Restaurant.Dto.Response;
+package com.example.QuickServe.For.Restaurant.Dto.CategoryDto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CategoryResponseDto {
-
-    private Long id;
+public class CategoryRequestDto {
 
     private String name;
 }

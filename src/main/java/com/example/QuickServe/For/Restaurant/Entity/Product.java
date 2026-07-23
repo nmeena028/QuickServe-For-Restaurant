@@ -1,15 +1,18 @@
 package com.example.QuickServe.For.Restaurant.Entity;
 
+import com.example.QuickServe.For.Restaurant.Entity.OrderReleted.OrderItem;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 
 @Entity
 @Data
+@NoArgsConstructor
 public class Product {
 
     @Id
@@ -28,6 +31,9 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
+
+    @OneToMany(mappedBy = "product")
+    private List<OrderItem> orderItems;
 
     private LocalDateTime createAt;
 

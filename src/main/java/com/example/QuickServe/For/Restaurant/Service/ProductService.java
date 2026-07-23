@@ -1,7 +1,7 @@
 package com.example.QuickServe.For.Restaurant.Service;
 
-import com.example.QuickServe.For.Restaurant.Dto.Request.ProductRequestDto;
-import com.example.QuickServe.For.Restaurant.Dto.Response.ProductResponseDto;
+import com.example.QuickServe.For.Restaurant.Dto.ProductDto.ProductRequestDto;
+import com.example.QuickServe.For.Restaurant.Dto.ProductDto.ProductResponseDto;
 import com.example.QuickServe.For.Restaurant.Entity.Category;
 import com.example.QuickServe.For.Restaurant.Entity.Product;
 import com.example.QuickServe.For.Restaurant.Repo.CategoryRepo;

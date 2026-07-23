@@ -1,7 +1,7 @@
 package com.example.QuickServe.For.Restaurant.Controller;
 
-import com.example.QuickServe.For.Restaurant.Dto.Request.CategoryRequestDto;
-import com.example.QuickServe.For.Restaurant.Dto.Response.CategoryResponseDto;
+import com.example.QuickServe.For.Restaurant.Dto.CategoryDto.CategoryRequestDto;
+import com.example.QuickServe.For.Restaurant.Dto.CategoryDto.CategoryResponseDto;
 import com.example.QuickServe.For.Restaurant.Service.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

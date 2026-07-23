@@ -1,4 +1,4 @@
-package com.example.QuickServe.For.Restaurant.Dto.Response;
+package com.example.QuickServe.For.Restaurant.Dto.ProductDto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

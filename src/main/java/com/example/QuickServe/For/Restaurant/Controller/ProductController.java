@@ -1,9 +1,7 @@
 package com.example.QuickServe.For.Restaurant.Controller;
 
-import com.example.QuickServe.For.Restaurant.Dto.Request.ProductRequestDto;
-import com.example.QuickServe.For.Restaurant.Dto.Response.CategoryResponseDto;
-import com.example.QuickServe.For.Restaurant.Dto.Response.ProductResponseDto;
-import com.example.QuickServe.For.Restaurant.Entity.Product;
+import com.example.QuickServe.For.Restaurant.Dto.ProductDto.ProductRequestDto;
+import com.example.QuickServe.For.Restaurant.Dto.ProductDto.ProductResponseDto;
 import com.example.QuickServe.For.Restaurant.Service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -14,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
+@RequestMapping("product")
 public class ProductController {
 
     private final ProductService productService;
@@ -43,7 +42,7 @@ public class ProductController {
         return ResponseEntity.status(HttpStatus.OK).body(productService.deleteById(id));
     }
 
-    @GetMapping("{name}")
+    @GetMapping("name/{name}")
     public ResponseEntity<ProductResponseDto> GetById(@PathVariable String name){
         return ResponseEntity.status(HttpStatus.OK).body(productService.GetByName(name));
     }
